@@ -1,0 +1,35 @@
+body 
+{
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#gName 
+{
+    color: White;
+    font-size: 80px; 
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#gInfo
+{
+    color: White;
+    margin-top: -20px;
+    font-size: 22px; 
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.btnMainMenu 
+{   
+    background-color: green;
+    margin-top: 5px;
+    width: 120px;
+    height: 30px;
+}
+
+.btnMainMenu:active 
+{ 
+    position:relative; 
+    top:4px; 
+}
