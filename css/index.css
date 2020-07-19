@@ -20,17 +20,17 @@ body
     font-family: Georgia, 'Times New Roman', Times, serif
 }
 
-#gCanvas
-{
-    background-color: darkgrey;
-    width: 800px;
-    height: 450px;
-}
-
 #noScript
 {
     color: red; 
     font-size: 30px;
+}
+
+.gCanvas
+{
+    background-color: darkgrey;
+    width: 1200px;
+    height: 675px;
 }
 
 .btnMainMenu 

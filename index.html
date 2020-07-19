@@ -4,10 +4,7 @@
         <title>Snake</title>
         <meta name="viewport" content="width=device-width, minimumscale=0.5, maximum-scale=2.0, initial-scale=1" />
         <link href="/css/index.css" rel="stylesheet" type="text/css" />
-        <script src="/scripts/index.js" type="text/javascript"></script>
-        <script src="/scripts/game.js" type="text/javascript"></script>
-        <script src="/scripts/draw.js" type="text/javascript"></script>
-        <script src="/scripts/snake.js" type="text/javascript"></script>
+        
     </head>
     <body onload="Menu()">
         <noscript>
@@ -26,12 +23,16 @@
                 </div>
             </div>
             <div id="Game">
-                <canvas id="gCanvas" ></canvas><br>
+                <canvas class="gCanvas" ></canvas><br>
                 <button class="btnMainMenu" onclick="StopGame()">Menu</button>
             </div>
             <div id="Settings">
                 <button class="btnMainMenu" onclick="Menu()">Menu</button>
             </div>
         </div>
+        <script src="/scripts/index.js" type="text/javascript"></script>
+        <script src="/scripts/game.js" type="text/javascript"></script>
+        <script src="/scripts/draw.js" type="text/javascript"></script>
+        <script src="/scripts/snake.js" type="text/javascript"></script>
     </body>
 </html>
