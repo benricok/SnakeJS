@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, minimumscale=0.5, maximum-scale=2.0, initial-scale=1" />
         <link href="/css/index.css" rel="stylesheet" type="text/css" />
         <script src="/scripts/index.js" type="text/javascript"></script>
+        <script src="/scripts/game.js" type="text/javascript"></script>
+        <script src="/scripts/draw.js" type="text/javascript"></script>
+        <script src="/scripts/snake.js" type="text/javascript"></script>
     </head>
     <body onload="Menu()">
         <noscript>
-            <a style="color: red; font-size: 30px;">This page requires JavaScript to function!</a>
+            <a id="noScript">This page requires JavaScript to function!</a>
         </noscript>
         <div>
             <div id="Menu"> 
@@ -23,7 +26,7 @@
                 </div>
             </div>
             <div id="Game">
-                <canvas id="GameUI" width="800" height="800"></canvas><br>
+                <canvas id="gCanvas" ></canvas><br>
                 <button class="btnMainMenu" onclick="StopGame()">Menu</button>
             </div>
             <div id="Settings">

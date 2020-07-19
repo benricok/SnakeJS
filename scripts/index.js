@@ -55,12 +55,3 @@ function StopGame()
         clockRunning = true;
     }
 }
-
-/*            */
-/*--- Game ---*/
-/*            */
-
-function Game()
-{
-    var canvas = document.getElementById("GameUI");
-}
