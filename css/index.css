@@ -26,6 +26,18 @@ body
     font-size: 30px;
 }
 
+#gScore
+{
+    color: White;
+    font-size: 22px; 
+}
+
+.Score
+{
+    color: White;
+    font-size: 22px; 
+}
+
 .gCanvas
 {
     background-color: darkgrey;

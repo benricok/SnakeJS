@@ -38,9 +38,8 @@ function StartGame()
     document.getElementById("Menu").style.display = "none";
     document.getElementById("Game").style.display = "block";
     document.getElementById("Settings").style.display = "none";
-
-    game = new Game();
-
+    clockRunning = true;
+    Game();
 }
 
 function StopGame()
