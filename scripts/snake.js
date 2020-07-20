@@ -22,11 +22,10 @@ function Snake()
     {
         for (let i=0; i<this.tail.length -1; i++)
         {
-            this.tail[i] = tail[i+1];
+            this.tail[i] = this.tail[i+1];
         }
 
         this.tail[this.total - 1] = { x: this.x, y: this.y };
-
 
         this.x += this.xSpeed;
         this.y += this.ySpeed;
@@ -55,13 +54,20 @@ function Snake()
         if(this.x === apple.x && this.y === apple.y)
         {
             this.total++;
+            log("Apple was at - x: " + apple.x + "y: " + apple.y);
             return true;
         }
+        return false;
+    }
+
+    this.checkCollision = function()
+    {
+
     }
 
     this.changeDirection = function(direction)
     {
-        direction.toLowerCase();
+        direction = dddirection.toLowerCase();
         switch(direction)
         {
             case 'w':

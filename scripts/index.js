@@ -1,5 +1,5 @@
-var debug = true;
 var clockRunning = false;
+var game;
 
 /*                */
 /*--- Debuging ---*/
@@ -7,6 +7,7 @@ var clockRunning = false;
 
 function log(log) 
 {
+    let debug = true;
     if (debug == true)
     {
         console.log(log);
@@ -39,7 +40,7 @@ function StartGame()
     document.getElementById("Game").style.display = "block";
     document.getElementById("Settings").style.display = "none";
     clockRunning = true;
-    Game();
+    game = new Game();
 }
 
 function StopGame()
@@ -47,6 +48,7 @@ function StopGame()
     clockRunning = false;
     if (window.confirm("Are you sure you want to exit the game?"))
     {
+        clearInterval(game.clock);
         Menu();
     }
     else

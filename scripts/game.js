@@ -1,11 +1,12 @@
 const canvas = document.querySelector(".gCanvas");
 log(canvas);
 const ctx = canvas.getContext("2d");
-const scale = 5;
+const scale = 40;
 const rows = canvas.height / scale;
 const columns = canvas.width / scale;
 var score = 0;
-const points = 25;
+
+
 /*            */
 /*--- Game ---*/
 /*            */
@@ -21,10 +22,9 @@ function Game()
     log(apple);
     document.getElementById("gScore").innerHTML = score;
     
-
-    if (clockRunning == true)
+    this.clock = window.setInterval(() => 
     {
-        window.setInterval(() => 
+        if (clockRunning == true)
         {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             snake.update();
@@ -34,14 +34,13 @@ function Game()
             if (snake.eat(apple)) 
             {
                 apple.eaten();
-                log("Eaten");
-                score += points;
-                log(score);
+                score += 25;
                 document.getElementById("gScore").innerHTML = score;
-            }
-
-        }, 200);
-    }
+            }        
+            snake.checkCollision();
+        }
+    }, 250);
+    
 
     window.addEventListener('keydown', ((evt) =>
     {
