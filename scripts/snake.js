@@ -62,12 +62,24 @@ function Snake()
 
     this.checkCollision = function()
     {
-
+        for(let i=0; i<this.tail.length; i++)
+        {
+            if (this.x === this.tail[i].x && this.y === this.tail[i].y)
+            {
+                this.tail = [];
+                this.total = 0;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
     this.changeDirection = function(direction)
     {
-        direction = dddirection.toLowerCase();
+        direction = direction.toLowerCase();
         switch(direction)
         {
             case 'w':
