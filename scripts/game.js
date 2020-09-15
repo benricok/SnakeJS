@@ -1,10 +1,10 @@
 const canvas = document.querySelector(".gCanvas");
 log(canvas);
 const ctx = canvas.getContext("2d");
-const scale = 40;
+const scale = 20;
 const rows = canvas.height / scale;
 const columns = canvas.width / scale;
-const speed = 200;
+const speed = 250;
 
 /*            */
 /*--- Game ---*/
